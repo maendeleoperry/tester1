@@ -1,0 +1,50 @@
+class card
+   attr_accessor  :rank, :suit
+
+   def initialzation(rank, suit)
+     self.rank = rank
+     self.suit = suit
+   end  
+
+   def Output_card
+     puts "#{rank} of #{suit}"
+   end
+
+   def self.random_card
+     card.new(rand(10), :spades)
+   end
+end
+
+class Deck
+  def initialize
+    @cards = []
+    @card << Card.new(rand(10), :spades)
+    @card << Card.new(rand(10), :hearts)
+    @card << Card.new(rand(10), :diamonds)
+    @card << Card.new(rand(10), :clovers)
+    @card << Card.new(rand(3), :joker)
+    @card << Card.new(rand(3), :king)
+    @card << Card.new(rand(3), :queen)
+    @card << Card.new(rand(3), :ace)
+
+  end
+
+  def shuffle
+    @card.shuffle
+
+  def shift
+    @card.shift  
+
+  def output
+    @card.each do |card|
+end
+deck = Deck.new
+deck.shuffle
+deck.shift #=> [10, :spades]
+deck.output
+
+
+
+
+   
+         
