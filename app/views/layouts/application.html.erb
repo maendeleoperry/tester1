@@ -10,6 +10,26 @@
   </head>
 
   <body>
+    <header class="row">
+  <div class="col-3">
+    
+      <br />
+      You know
+      <br />
+      you need
+      <br />
+      to quiz
+    </div>
+  </div>
+  <div class="col-4 slogan">
+    Quizzing out unsolicited advice about quizzing since 2019
+  </div>
+  <div class="col-5 links">
+    <%= link_to "home", :action => "index" %>
+    <%= link_to 'Contribute', :action => "new" %>
+    <%= link_to 'About', :action => "about" %>
+  </div>
+</header>
     <%= yield %>
   </body>
 </html>

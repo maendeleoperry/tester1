@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'practise#index'
-  get "/practise/about", to: 'practise#about'
-  resources :practise
+  root to: 'practice#index'
+  get "/practice/about", to: 'practice#about'
+  resources :practice
 end
